@@ -1,0 +1,28 @@
+{
+  "import module": {
+    "prefix": "imp",
+    "body": ["import '$0'"],
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "import module from": {
+    "prefix": "imf",
+    "body": ["import $0 from '$1'"],
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "import module destructive": {
+    "prefix": "imd",
+    "body": ["import { $0 } from '$1'"],
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+
+  // React
+  "react component": {
+    "prefix": "rc",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return <h1>$0</h1>",
+      "}"
+    ],
+    "scope": "javascriptreact,typescriptreact"
+  }
+}
